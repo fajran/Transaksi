@@ -18,6 +18,17 @@ namespace Transaksi
             total = 0;
         }
 
+        private void Reset()
+        {
+            dtTanggal.Value = DateTime.Now;
+            txtNama.Text = "";
+            cbBarang.SelectedItem = null;
+            txtHarga.Text = "";
+            txtKuantitas.Text = "";
+            listBarang.Items.Clear();
+            total = 0;
+        }
+
         private void AddBarang(string barang, int harga, int kuantitas)
         {
             int total = harga + kuantitas;
@@ -47,17 +58,17 @@ namespace Transaksi
 
         private void Transaksi_Load(object sender, EventArgs e)
         {
-            dtTanggal.Value = DateTime.Now;
+            Reset();
         }
 
         private void btnBatal_Click(object sender, EventArgs e)
         {
-            dtTanggal.Value = DateTime.Now;
+            Reset();
         }
 
         private void btnSimpan_Click(object sender, EventArgs e)
         {
-            dtTanggal.Value = DateTime.Now;
+            Reset();
         }
 
         private void btnTambah_Click(object sender, EventArgs e)
