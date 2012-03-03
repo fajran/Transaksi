@@ -10,9 +10,25 @@ namespace Transaksi
 {
     public partial class Transaksi : Form
     {
+        private int _total;
+
         public Transaksi()
         {
             InitializeComponent();
+            total = 0;
+        }
+
+        private int total
+        {
+            get
+            {
+                return _total;
+            }
+            set
+            {
+                _total = value;
+                lblTotal.Text = "Rp. " + _total;
+            }
         }
 
         private void Transaksi_Load(object sender, EventArgs e)
