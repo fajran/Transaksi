@@ -170,6 +170,7 @@
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4});
+            this.listBarang.FullRowSelect = true;
             this.listBarang.Location = new System.Drawing.Point(19, 80);
             this.listBarang.Name = "listBarang";
             this.listBarang.Size = new System.Drawing.Size(373, 190);
