@@ -159,6 +159,7 @@
             this.btnTambah.Text = "Tambah";
             this.btnTambah.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTambah.UseVisualStyleBackColor = true;
+            this.btnTambah.Click += new System.EventHandler(this.btnTambah_Click);
             // 
             // listBarang
             // 
