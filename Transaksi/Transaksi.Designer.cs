@@ -190,6 +190,7 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "Barang";
+            this.columnHeader1.Width = 175;
             // 
             // columnHeader2
             // 
