@@ -29,5 +29,20 @@ namespace Transaksi
         {
             dtTanggal.Value = DateTime.Now;
         }
+
+        private bool IsNumeric(char ch)
+        {
+            return !char.IsControl(ch) && !char.IsDigit(ch);
+        }
+
+        private void txtHarga_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = IsNumeric(e.KeyChar);
+        }
+
+        private void txtKuantitas_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = IsNumeric(e.KeyChar);
+        }
     }
 }

@@ -200,6 +200,7 @@
             this.txtKuantitas.Name = "txtKuantitas";
             this.txtKuantitas.Size = new System.Drawing.Size(68, 20);
             this.txtKuantitas.TabIndex = 5;
+            this.txtKuantitas.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKuantitas_KeyPress);
             // 
             // txtHarga
             // 
@@ -209,6 +210,7 @@
             this.txtHarga.Name = "txtHarga";
             this.txtHarga.Size = new System.Drawing.Size(82, 20);
             this.txtHarga.TabIndex = 4;
+            this.txtHarga.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHarga_KeyPress);
             // 
             // cbBarang
             // 
