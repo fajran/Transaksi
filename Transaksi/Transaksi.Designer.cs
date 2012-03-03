@@ -310,6 +310,7 @@
             this.stokBarangToolStripMenuItem.Name = "stokBarangToolStripMenuItem";
             this.stokBarangToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.stokBarangToolStripMenuItem.Text = "&Stok Barang";
+            this.stokBarangToolStripMenuItem.Click += new System.EventHandler(this.stokBarangToolStripMenuItem_Click);
             // 
             // laporanToolStripMenuItem
             // 

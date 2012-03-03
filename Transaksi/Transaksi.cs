@@ -120,6 +120,12 @@ namespace Transaksi
             e.Handled = IsNumeric(e.KeyChar);
         }
 
+        private void stokBarangToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            StokBarang form = new StokBarang();
+            form.ShowDialog();
+        }
+
         private void listBarang_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Delete)
