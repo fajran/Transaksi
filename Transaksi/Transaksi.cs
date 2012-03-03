@@ -119,5 +119,22 @@ namespace Transaksi
         {
             e.Handled = IsNumeric(e.KeyChar);
         }
+
+        private void listBarang_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Delete)
+            {
+                int total = 0;
+                foreach (ListViewItem item in listBarang.Items)
+                {
+                    if (item.Selected)
+                    {
+                        total += Int32.Parse(item.SubItems[3].Text);
+                        item.Remove();
+                    }
+                }
+                this.total -= total;
+            }
+        }
     }
 }

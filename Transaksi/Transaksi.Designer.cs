@@ -185,6 +185,7 @@
             this.listBarang.TabIndex = 7;
             this.listBarang.UseCompatibleStateImageBehavior = false;
             this.listBarang.View = System.Windows.Forms.View.Details;
+            this.listBarang.KeyDown += new System.Windows.Forms.KeyEventHandler(this.listBarang_KeyDown);
             // 
             // columnHeader1
             // 
