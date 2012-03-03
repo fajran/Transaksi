@@ -62,6 +62,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="StokBarang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StokBarang.Designer.cs">
+      <DependentUpon>StokBarang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Transaksi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="StokBarang.resx">
+      <DependentUpon>StokBarang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Transaksi.resx">
       <DependentUpon>Transaksi.cs</DependentUpon>
     </EmbeddedResource>
