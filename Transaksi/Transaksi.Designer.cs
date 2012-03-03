@@ -50,8 +50,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnBatal = new System.Windows.Forms.Button();
             this.btnSimpan = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.stokBarangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.laporanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
+            this.keluarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -62,7 +69,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.dtTanggal);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(12, 32);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(410, 90);
             this.groupBox1.TabIndex = 1;
@@ -120,9 +127,9 @@
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Location = new System.Drawing.Point(12, 108);
+            this.groupBox2.Location = new System.Drawing.Point(12, 128);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(410, 313);
+            this.groupBox2.Size = new System.Drawing.Size(410, 293);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Daftar Barang";
@@ -131,7 +138,7 @@
             // 
             this.lblTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.Location = new System.Drawing.Point(93, 279);
+            this.lblTotal.Location = new System.Drawing.Point(93, 259);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(299, 20);
             this.lblTotal.TabIndex = 9;
@@ -141,7 +148,7 @@
             // label6
             // 
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label6.Location = new System.Drawing.Point(19, 279);
+            this.label6.Location = new System.Drawing.Point(19, 259);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(68, 20);
             this.label6.TabIndex = 8;
@@ -174,7 +181,7 @@
             this.listBarang.FullRowSelect = true;
             this.listBarang.Location = new System.Drawing.Point(19, 80);
             this.listBarang.Name = "listBarang";
-            this.listBarang.Size = new System.Drawing.Size(373, 190);
+            this.listBarang.Size = new System.Drawing.Size(373, 170);
             this.listBarang.TabIndex = 7;
             this.listBarang.UseCompatibleStateImageBehavior = false;
             this.listBarang.View = System.Windows.Forms.View.Details;
@@ -276,6 +283,50 @@
             this.btnSimpan.UseVisualStyleBackColor = true;
             this.btnSimpan.Click += new System.EventHandler(this.btnSimpan_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(434, 24);
+            this.menuStrip1.TabIndex = 10;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.stokBarangToolStripMenuItem,
+            this.laporanToolStripMenuItem,
+            this.toolStripMenuItem2,
+            this.keluarToolStripMenuItem});
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(50, 20);
+            this.toolStripMenuItem1.Text = "&Menu";
+            // 
+            // stokBarangToolStripMenuItem
+            // 
+            this.stokBarangToolStripMenuItem.Name = "stokBarangToolStripMenuItem";
+            this.stokBarangToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.stokBarangToolStripMenuItem.Text = "&Stok Barang";
+            // 
+            // laporanToolStripMenuItem
+            // 
+            this.laporanToolStripMenuItem.Name = "laporanToolStripMenuItem";
+            this.laporanToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.laporanToolStripMenuItem.Text = "&Laporan";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(149, 6);
+            // 
+            // keluarToolStripMenuItem
+            // 
+            this.keluarToolStripMenuItem.Name = "keluarToolStripMenuItem";
+            this.keluarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.keluarToolStripMenuItem.Text = "&Keluar";
+            // 
             // Transaksi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -285,6 +336,7 @@
             this.Controls.Add(this.btnBatal);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.menuStrip1);
             this.MinimumSize = new System.Drawing.Size(450, 500);
             this.Name = "Transaksi";
             this.Text = "Transaksi";
@@ -293,7 +345,10 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -321,6 +376,12 @@
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem stokBarangToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem laporanToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem keluarToolStripMenuItem;
 
     }
 }
