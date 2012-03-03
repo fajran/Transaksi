@@ -258,6 +258,7 @@
             this.btnBatal.TabStop = false;
             this.btnBatal.Text = "Batal";
             this.btnBatal.UseVisualStyleBackColor = true;
+            this.btnBatal.Click += new System.EventHandler(this.btnBatal_Click);
             // 
             // btnSimpan
             // 
@@ -268,6 +269,7 @@
             this.btnSimpan.TabIndex = 8;
             this.btnSimpan.Text = "Simpan";
             this.btnSimpan.UseVisualStyleBackColor = true;
+            this.btnSimpan.Click += new System.EventHandler(this.btnSimpan_Click);
             // 
             // Transaksi
             // 
@@ -281,6 +283,7 @@
             this.MinimumSize = new System.Drawing.Size(450, 500);
             this.Name = "Transaksi";
             this.Text = "Transaksi";
+            this.Load += new System.EventHandler(this.Transaksi_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

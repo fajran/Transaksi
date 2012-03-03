@@ -14,5 +14,20 @@ namespace Transaksi
         {
             InitializeComponent();
         }
+
+        private void Transaksi_Load(object sender, EventArgs e)
+        {
+            dtTanggal.Value = DateTime.Now;
+        }
+
+        private void btnBatal_Click(object sender, EventArgs e)
+        {
+            dtTanggal.Value = DateTime.Now;
+        }
+
+        private void btnSimpan_Click(object sender, EventArgs e)
+        {
+            dtTanggal.Value = DateTime.Now;
+        }
     }
 }
