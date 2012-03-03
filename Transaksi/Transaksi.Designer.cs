@@ -218,6 +218,7 @@
             // 
             this.cbBarang.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbBarang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbBarang.FormattingEnabled = true;
             this.cbBarang.Location = new System.Drawing.Point(93, 26);
             this.cbBarang.Name = "cbBarang";
