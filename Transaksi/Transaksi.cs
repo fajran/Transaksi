@@ -59,16 +59,19 @@ namespace Transaksi
         private void Transaksi_Load(object sender, EventArgs e)
         {
             Reset();
+            txtNama.Focus();
         }
 
         private void btnBatal_Click(object sender, EventArgs e)
         {
             Reset();
+            txtNama.Focus();
         }
 
         private void btnSimpan_Click(object sender, EventArgs e)
         {
             Reset();
+            txtNama.Focus();
         }
 
         private void btnTambah_Click(object sender, EventArgs e)
