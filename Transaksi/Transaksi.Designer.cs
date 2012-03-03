@@ -287,7 +287,7 @@
             this.MinimumSize = new System.Drawing.Size(450, 500);
             this.Name = "Transaksi";
             this.Text = "Transaksi";
-            this.Load += new System.EventHandler(this.Transaksi_Load);
+            this.Shown += new System.EventHandler(this.Transaksi_Shown);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

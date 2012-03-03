@@ -56,7 +56,7 @@ namespace Transaksi
             }
         }
 
-        private void Transaksi_Load(object sender, EventArgs e)
+        private void Transaksi_Shown(object sender, EventArgs e)
         {
             Reset();
             txtNama.Focus();
