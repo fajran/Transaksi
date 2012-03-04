@@ -51,7 +51,7 @@ namespace Transaksi
             cbBarang.Items.Clear();
             foreach (Barang barang in stok)
             {
-                cbBarang.Items.Add(barang.Nama);
+                cbBarang.Items.Add(barang);
             }
         }
 

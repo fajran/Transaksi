@@ -37,7 +37,7 @@ namespace Transaksi
                 item.SubItems.Add("" + barang.Stok);
                 listStok.Items.Add(item);
 
-                cbStok.Items.Add(barang.Nama);
+                cbStok.Items.Add(barang);
             }
         }
 
@@ -52,7 +52,7 @@ namespace Transaksi
                 item.SubItems.Add("" + barang.Harga);
                 listHarga.Items.Add(item);
 
-                cbHarga.Items.Add(barang.Nama);
+                cbHarga.Items.Add(barang);
             }
         }
 
@@ -61,7 +61,7 @@ namespace Transaksi
             listBarang.Items.Clear();
             foreach (Barang barang in stok)
             {
-                listBarang.Items.Add(barang.Nama);
+                listBarang.Items.Add(barang);
             }
         }
     }
