@@ -132,6 +132,7 @@ namespace Transaksi
         {
             StokBarang form = new StokBarang(stok);
             form.ShowDialog();
+            UpdateStok();
         }
 
         private void listBarang_KeyDown(object sender, KeyEventArgs e)

@@ -130,5 +130,25 @@ namespace Transaksi
         {
             e.Handled = Utils.IsNumeric(e.KeyChar);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string nama = txtBarang.Text.Trim();
+            txtBarang.Text = nama;
+
+            if (nama.Equals(""))
+            {
+                txtBarang.Focus();
+                return;
+            }
+
+            Barang barang = new Barang(nama);
+            stok.Add(barang);
+
+            UpdateStok();
+
+            txtBarang.Text = "";
+            txtBarang.Focus();
+        }
     }
 }
