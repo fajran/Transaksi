@@ -42,5 +42,10 @@ namespace Transaksi
             set { _stok = value; }
             get { return _stok; }
         }
+
+        public override string ToString()
+        {
+            return _nama;
+        }
     }
 }
