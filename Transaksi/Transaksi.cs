@@ -11,11 +11,13 @@ namespace Transaksi
     public partial class Transaksi : Form
     {
         private int _total;
+        private Stok stok;
 
         public Transaksi()
         {
             InitializeComponent();
             total = 0;
+            stok = new Stok();
         }
 
         private void Reset()
@@ -122,7 +124,7 @@ namespace Transaksi
 
         private void stokBarangToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            StokBarang form = new StokBarang();
+            StokBarang form = new StokBarang(stok);
             form.ShowDialog();
         }
 

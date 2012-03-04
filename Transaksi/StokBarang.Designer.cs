@@ -139,6 +139,7 @@
             this.listStok.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2});
+            this.listStok.FullRowSelect = true;
             this.listStok.Location = new System.Drawing.Point(6, 6);
             this.listStok.Name = "listStok";
             this.listStok.Size = new System.Drawing.Size(340, 192);
@@ -220,6 +221,7 @@
             this.listHarga.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader3,
             this.columnHeader4});
+            this.listHarga.FullRowSelect = true;
             this.listHarga.Location = new System.Drawing.Point(6, 6);
             this.listHarga.Name = "listHarga";
             this.listHarga.Size = new System.Drawing.Size(340, 192);
