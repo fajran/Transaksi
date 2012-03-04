@@ -118,19 +118,14 @@ namespace Transaksi
             cbBarang.Focus();
         }
 
-        private bool IsNumeric(char ch)
-        {
-            return !char.IsControl(ch) && !char.IsDigit(ch);
-        }
-
         private void txtHarga_KeyPress(object sender, KeyPressEventArgs e)
         {
-            e.Handled = IsNumeric(e.KeyChar);
+            e.Handled = Utils.IsNumeric(e.KeyChar);
         }
 
         private void txtKuantitas_KeyPress(object sender, KeyPressEventArgs e)
         {
-            e.Handled = IsNumeric(e.KeyChar);
+            e.Handled = Utils.IsNumeric(e.KeyChar);
         }
 
         private void stokBarangToolStripMenuItem_Click(object sender, EventArgs e)
