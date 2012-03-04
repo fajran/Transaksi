@@ -107,6 +107,7 @@
             this.txtStok.Name = "txtStok";
             this.txtStok.Size = new System.Drawing.Size(71, 20);
             this.txtStok.TabIndex = 4;
+            this.txtStok.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtStok_KeyPress);
             // 
             // button1
             // 
@@ -190,6 +191,7 @@
             this.txtHarga.Name = "txtHarga";
             this.txtHarga.Size = new System.Drawing.Size(71, 20);
             this.txtHarga.TabIndex = 7;
+            this.txtHarga.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHarga_KeyPress);
             // 
             // button2
             // 

@@ -120,5 +120,15 @@ namespace Transaksi
 
             cbHarga.Focus();
         }
+
+        private void txtHarga_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = Utils.IsNumeric(e.KeyChar);
+        }
+
+        private void txtStok_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = Utils.IsNumeric(e.KeyChar);
+        }
     }
 }
