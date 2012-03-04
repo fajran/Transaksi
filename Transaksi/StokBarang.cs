@@ -33,6 +33,7 @@ namespace Transaksi
             foreach (Barang barang in stok)
             {
                 ListViewItem item = new ListViewItem();
+                item.Tag = barang;
                 item.Text = barang.Nama;
                 item.SubItems.Add("" + barang.Stok);
                 listStok.Items.Add(item);
@@ -48,6 +49,7 @@ namespace Transaksi
             foreach (Barang barang in stok)
             {
                 ListViewItem item = new ListViewItem();
+                item.Tag = barang;
                 item.Text = barang.Nama;
                 item.SubItems.Add("" + barang.Harga);
                 listHarga.Items.Add(item);
