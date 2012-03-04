@@ -18,6 +18,7 @@ namespace Transaksi
             InitializeComponent();
             total = 0;
             stok = new Stok();
+            UpdateStok();
         }
 
         private void Reset()
@@ -43,6 +44,15 @@ namespace Transaksi
             listBarang.Items.Add(item);
 
             this.total += total;
+        }
+
+        private void UpdateStok()
+        {
+            cbBarang.Items.Clear();
+            foreach (Barang barang in stok)
+            {
+                cbBarang.Items.Add(barang.Nama);
+            }
         }
 
         private int total
