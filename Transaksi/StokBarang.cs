@@ -66,5 +66,32 @@ namespace Transaksi
                 listBarang.Items.Add(barang);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (cbStok.SelectedItem == null)
+            {
+                cbStok.Focus();
+                return;
+            }
+
+            Barang barang = (Barang)cbStok.SelectedItem;
+            string stok = txtStok.Text;
+
+            if (stok.Equals("") || Int32.Parse(stok) <= 0)
+            {
+                txtStok.Focus();
+                return;
+            }
+
+            barang.Stok += Int32.Parse(stok);
+
+            cbStok.SelectedItem = null;
+            txtStok.Text = "";
+
+            UpdateListStok();
+
+            cbStok.Focus();
+        }
     }
 }
