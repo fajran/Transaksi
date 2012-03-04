@@ -32,12 +32,13 @@ namespace Transaksi
             total = 0;
         }
 
-        private void AddBarang(string barang, int harga, int kuantitas)
+        private void AddBarang(Barang barang, int harga, int kuantitas)
         {
             int total = harga + kuantitas;
 
             ListViewItem item = new ListViewItem();
-            item.Text = barang;
+            item.Tag = barang;
+            item.Text = barang.Nama;
             item.SubItems.Add("" + kuantitas);
             item.SubItems.Add("" + harga);
             item.SubItems.Add("" + total);
@@ -94,7 +95,7 @@ namespace Transaksi
                 return;
             }
 
-            string barang = cbBarang.SelectedItem.ToString();
+            Barang barang = (Barang)cbBarang.SelectedItem;
             string harga = txtHarga.Text;
             string kuantitas = txtKuantitas.Text;
 
