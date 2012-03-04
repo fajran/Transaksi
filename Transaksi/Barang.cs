@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Transaksi
 {
-    class Barang
+    public class Barang
     {
         private string _nama;
         private int _harga;

@@ -4,8 +4,7 @@ using System.Text;
 
 namespace Transaksi
 {
-    class Stok : List<Barang>
+    public class Stok : List<Barang>
     {
-
     }
 }
