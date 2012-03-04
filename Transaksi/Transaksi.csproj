@@ -62,6 +62,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Barang.cs" />
+    <Compile Include="Stok.cs" />
     <Compile Include="StokBarang.cs">
       <SubType>Form</SubType>
     </Compile>
