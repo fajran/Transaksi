@@ -29,24 +29,30 @@ namespace Transaksi
         private void UpdateListStok()
         {
             listStok.Items.Clear();
+            cbStok.Items.Clear();
             foreach (Barang barang in stok)
             {
                 ListViewItem item = new ListViewItem();
                 item.Text = barang.Nama;
                 item.SubItems.Add("" + barang.Stok);
                 listStok.Items.Add(item);
+
+                cbStok.Items.Add(barang.Nama);
             }
         }
 
         private void UpdateListHarga()
         {
             listHarga.Items.Clear();
+            cbHarga.Items.Clear();
             foreach (Barang barang in stok)
             {
                 ListViewItem item = new ListViewItem();
                 item.Text = barang.Nama;
                 item.SubItems.Add("" + barang.Harga);
                 listHarga.Items.Add(item);
+
+                cbHarga.Items.Add(barang.Nama);
             }
         }
 
