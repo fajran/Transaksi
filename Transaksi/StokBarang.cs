@@ -93,5 +93,32 @@ namespace Transaksi
 
             cbStok.Focus();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (cbHarga.SelectedItem == null)
+            {
+                cbHarga.Focus();
+                return;
+            }
+
+            Barang barang = (Barang)cbHarga.SelectedItem;
+            string harga = txtHarga.Text;
+
+            if (harga.Equals("") || Int32.Parse(harga) <= 0)
+            {
+                txtHarga.Focus();
+                return;
+            }
+
+            barang.Harga = Int32.Parse(harga);
+
+            cbHarga.SelectedItem = null;
+            txtHarga.Text = "";
+
+            UpdateListHarga();
+
+            cbHarga.Focus();
+        }
     }
 }
